@@ -1,10 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body {
-    width: 1400px;
-    height: 800px;
+    width: 100vw;
+    height: 100vh;
     margin: 10px auto;
     padding: 10px auto;
 }
  
+#landingBody {
+     margin: 0px;
+     padding: 0px;
+     width: 100vw;
+     height: 100vh;
+     background-image: url('https://images.unsplash.com/photo-1552053091-0800c625673c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVsYXZpdnxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+#landingBody h1   {
+    margin-top: 50px;
+    font-size: 3em;
+}
+
+#landingBody p {
+    margin-top: 50px;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+#landingBody a button {
+    background-color: transparent;
+    color: black;
+}
+
+#landingBody a button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+        margin: 5px auto;
+    }
+
+    p {
+        font-size: 1em;   
+    }
+}
+
 .navbar {
     list-style: none;
     font-family:fantasy;
@@ -15,7 +66,7 @@ body {
     margin: 0;
     padding: 0;
     background-color:  rgb(12, 49, 92);
-    }
+            }
 
 .navbar li {
     float: left;
@@ -31,6 +82,7 @@ body {
     background-color:  rgb(3, 12, 24);
     color: azure;
 }
+
 header {
     width: 100%;
     height: 20%;
@@ -57,6 +109,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 #picture {
     width: 200px;
@@ -64,17 +117,18 @@ main {
     position: relative;
     left: 30px;
     top: 30px;
-    border: 5px white solid;
+    float: left;
    
 }
 #about {
-    position: absolute;
-    left: 320px;
-    top: 250px;
+    position: relative;
     color: whitesmoke;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     text-shadow: 1px  1px black;
+    float: right;
+    top: 30px;
+    left: -30px;
   }
 
   .side{
